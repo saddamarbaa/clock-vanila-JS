@@ -1,7 +1,9 @@
-// call setClock() function every second
+//  The setInterval(setClock, 1000) runs function setClock() every 1000 milliseconds
+//  So it means the function runs every seconds
+//  and then updates out HTML Code as the value calculated.
 setInterval(setClock, 1000);
 
-// set some variables for query to select data attribute
+//  select the hour, minute and seconds in HTML.
 const hourHand = document.querySelector('[data-hour-hand]');
 const minuteHand = document.querySelector('[data-minute-hand]');
 const secondHand = document.querySelector('[data-second-hand]');
