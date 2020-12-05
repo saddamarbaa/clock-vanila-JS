@@ -5,7 +5,7 @@ Project : Building Time Clock with Vanilla Javascript (For Beginners)
 
 
 
-# GitHub Pages(URL FOR TESTING) : https://saddamarbaa.github.io/clock-vanila-JS/
+ GitHub Pages(URL FOR TESTING) : https://saddamarbaa.github.io/clock-vanila-JS/
 
 
 
