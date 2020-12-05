@@ -1,0 +1,62 @@
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+        font-family: Gotham Rounded, sans-serif;
+    }
+    
+    body {
+        background: rgb(238, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    /*====== target the clock  ======*/
+    
+    .clock {
+        width: 300px;
+        height: 300px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        border: 4px solid white;
+        box-shadow: -8px 8px 15px rgba(225, 225, 225, 0.05), 20px 20px 20px rgba(0, 0, 0, 0.2), inset -8px -8px 15px rgba(225, 225, 225, 0.05), inset 20px 20px 20px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+    
+    .clock::after {
+        content: '';
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 11;
+    }
+    
+    .clock .number {
+        /* (--roation) is css varible */
+        --roation: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transform: rotate(var(--roation));
+        font-size: 1.5rem;
+        padding: 18px;
+    }
+    
+    .number::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 15px;
+        background-color: black;
+    }
